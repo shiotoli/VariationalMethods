@@ -28,6 +28,11 @@
 (*MultiFunctionVariation[MultiFunctionCase[x]]*)
 (*MultiVariableVariation[MultiVariableCase[x,y,z]]*)
 (**)
+(*(*Isoperimetric problem F is Variational Function and G is the Isoperimetric Constraint*)*)
+(* F[x_]:=y'[x]^2+x^2;*)
+(*G[x_]:=y[x]^2;*)
+(*EulerEquations[F[x]+lambda G[x],y[x],x]*)
+(**)
 
 
 
