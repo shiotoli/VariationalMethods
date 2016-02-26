@@ -33,6 +33,13 @@
 (*G[x_]:=y[x]^2;*)
 (*EulerEquations[F[x]+lambda G[x],y[x],x]*)
 (**)
+(*(*Weierstrass Form of Euler Equation*)*)
+(*F[t_]:=(y'[t]^2-y[t]^2 x'[t]^2)/x'[t];*)
+(*Simplify[D[F[t],x[t],y'[t]]-D[F[t],x'[t],y[t]]+(x'[t] y''[t]-x''[t] y'[t])D[F[t],x'[t],y'[t]]/(y'[t] x'[t])]*)
+(**)
+(*(*Non Weierstrass Form of Euler Equation*)*)
+(*D[F[t],x[t]]-D[D[F[t],x'[t],t]]*)
+(*D[F[t],y[t]]-D[D[F[t],y'[t],t]]*)
 
 
 
