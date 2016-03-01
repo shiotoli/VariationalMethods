@@ -41,3 +41,16 @@
 (*f[x_]:=x;*)
 (*J=Integrate[T[x] y[x]-2 f[x] y[x],{x,0,1}];*)
 (*Solve[{D[J,a0]==0,D[J,a1]==0},{a0,a1}]*)
+
+
+(* ::Input:: *)
+(*(*2D Litz method for partial Deveriation Equation*)*)
+(*(*y''-y=x,y[0]=y[1]=0*)*)
+(*u[x_,y_]:=a1[x](y^2-k^2x^2);*)
+(*Tu[x_,y_]:=Laplacian[u[x,y],{x,y}];*)
+(*f[x_,y_]:=-1;*)
+(*Simplify[Integrate[Tu[x,y] u[x,y]-2f[x,y] u[x,y],{x,a,b},{y,-k x,k x}]]*)
+
+
+(* ::Input:: *)
+(*DSolve[EulerEquations[8/15 k^3 x^3 a1[x] (-5+5 (-1+k^2) a1[x]+10 k^2 x Derivative[1][a1][x]+2 k^2 x^2 (a1^\[Prime]\[Prime])[x]),a1[x],x],a1[x],x]*)
